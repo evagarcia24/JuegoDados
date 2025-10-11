@@ -39,13 +39,13 @@ public class Main extends JFrame {
         
         // Crear dado 3
         labelDado3 = new JLabel("-");
-        labelResultado3 = new JLabel("-");
+        labelResultado3 = new JLabel("Esperando Tirada...");
         JPanel panelDado3 = crearPanelDado("DADO DE 3 CARAS", labelDado3, labelResultado3);
         panelDados.add(panelDado3);
         
         // Crear dado 21
         labelDado21 = new JLabel("-");
-        labelResultado21 = new JLabel("-");
+        labelResultado21 = new JLabel("Esperando Tirada...");
         JPanel panelDado21 = crearPanelDado("DADO DE 21 CARAS", labelDado21, labelResultado21);
         panelDados.add(panelDado21);
         
