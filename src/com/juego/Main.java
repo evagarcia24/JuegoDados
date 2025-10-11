@@ -55,14 +55,14 @@ public class Main extends JFrame {
         panelBotones.setOpaque(false);
         panelBotones.setBorder(BorderFactory.createEmptyBorder(0, 20, 30, 20));
         
-        JButton btnDado3 = crearBoton("Tirar D3");
+        JButton btnDado3 = crearBoton("Tirar Dado 3");
         btnDado3.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 tirarDado3();
             }
         });
         
-        JButton btnDado21 = crearBoton("Tirar D21");
+        JButton btnDado21 = crearBoton("Tirar Dado 21");
         btnDado21.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 tirarDado21();
