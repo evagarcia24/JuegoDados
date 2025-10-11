@@ -90,8 +90,8 @@ public class Main extends JFrame {
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
                 Graphics2D g2d = (Graphics2D) g;
-                Color color1 = new Color(102, 126, 234);
-                Color color2 = new Color(118, 75, 162);
+                Color color1 = new Color(125, 113, 211);
+                Color color2 = new Color(135, 5, 122);
                 GradientPaint gp = new GradientPaint(0, 0, color1, 0, getHeight(), color2);
                 g2d.setPaint(gp);
                 g2d.fillRect(0, 0, getWidth(), getHeight());
