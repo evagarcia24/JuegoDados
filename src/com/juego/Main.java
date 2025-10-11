@@ -27,7 +27,7 @@ public class Main extends JFrame {
         JPanel panelPrincipal = crearPanelConFondo();
         panelPrincipal.setLayout(new BorderLayout(20, 20));
         
-        JLabel titulo = new JLabel("JUEGO DE ROL - SISTEMA DE DADOS", SwingConstants.CENTER);
+        JLabel titulo = new JLabel("JUEGO DE ROL - TIRADA DE DADOS", SwingConstants.CENTER);
         titulo.setFont(new Font("Arial", Font.BOLD, 28));
         titulo.setForeground(Color.WHITE);
         titulo.setBorder(BorderFactory.createEmptyBorder(30, 20, 20, 20));
@@ -56,6 +56,7 @@ public class Main extends JFrame {
         panelBotones.setBorder(BorderFactory.createEmptyBorder(0, 20, 30, 20));
         
         JButton btnDado3 = crearBoton("Tirar Dado 3");
+        btnDado3.setForeground(Color.BLACK);
         btnDado3.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 tirarDado3();
@@ -63,6 +64,7 @@ public class Main extends JFrame {
         });
         
         JButton btnDado21 = crearBoton("Tirar Dado 21");
+        btnDado21.setForeground(Color.BLACK);
         btnDado21.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 tirarDado21();
@@ -70,6 +72,7 @@ public class Main extends JFrame {
         });
         
         JButton btnAmbos = crearBoton("Tirar Ambos");
+        btnAmbos.setForeground(Color.BLACK);
         btnAmbos.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 tirarAmbos();
