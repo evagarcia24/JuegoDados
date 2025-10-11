@@ -25,7 +25,7 @@ public class Main extends JFrame {
         setLocationRelativeTo(null);
         
         JPanel panelPrincipal = crearPanelConFondo();
-        panelPrincipal.setLayout(new BorderLayout(20, 20));
+        panelPrincipal.setLayout(new BorderLayout(30, 30));
         
         JLabel titulo = new JLabel("JUEGO DE ROL - TIRADA DE DADOS", SwingConstants.CENTER);
         titulo.setFont(new Font("Arial", Font.BOLD, 40));
@@ -130,7 +130,7 @@ public class Main extends JFrame {
         panelDadoVisual.add(lblDado);
         
         // Configurar label del resultado
-        lblResultado.setFont(new Font("Arial", Font.BOLD, 24));
+        lblResultado.setFont(new Font("Arial", Font.BOLD, 30));
         lblResultado.setForeground(Color.WHITE);
         lblResultado.setAlignmentX(Component.CENTER_ALIGNMENT);
         lblResultado.setOpaque(true);
@@ -193,7 +193,7 @@ public class Main extends JFrame {
         final int[] contador = new int[1];
         contador[0] = 0;
         
-        Timer animacion = new Timer(100, new ActionListener() {
+        Timer animacion = new Timer(150, new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 labelDado.setText(String.valueOf((int)(Math.random() * dado.getCaras()) + 1));
                 contador[0]++;
