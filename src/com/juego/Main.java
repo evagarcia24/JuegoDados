@@ -19,8 +19,8 @@ public class Main extends JFrame {
         dado3 = new Dado(3);
         dado21 = new Dado(21);
         
-        setTitle("Juego de Rol - Sistema de Dados");
-        setSize(800, 600);
+        setTitle("Juego de Rol - Tirar Dados");
+        setSize(1024, 768);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         
