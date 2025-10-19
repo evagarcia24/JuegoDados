@@ -177,7 +177,7 @@ public class Main extends JFrame {
     
     private void tirarAmbos() {
         tirarDado3();
-        Timer timer = new Timer(300, new ActionListener() {
+        Timer timer = new Timer(0, new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 tirarDado21();
             }
@@ -193,7 +193,7 @@ public class Main extends JFrame {
         final int[] contador = new int[1];
         contador[0] = 0;
         
-        Timer animacion = new Timer(100, new ActionListener() {
+        Timer animacion = new Timer(150, new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 labelDado.setText(String.valueOf((int)(Math.random() * dado.getCaras()) + 1));
                 contador[0]++;
