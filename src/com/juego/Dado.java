@@ -1,18 +1,20 @@
 package com.juego;
 
+import java.util.Random;
+
 public class Dado {
-	private int caras;
+	private final int caras;
+	private final Random random = new Random();
 
 	public Dado(int caras) {
 		this.caras = caras;
 	}
 
 	public int tirar() {
-		return (int) (Math.random() * caras) + 1;
+		return random.nextInt(caras) + 1;
 	}
 
 	public int getCaras() {
 		return caras;
 	}
-
 }
